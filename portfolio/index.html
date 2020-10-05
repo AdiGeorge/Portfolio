@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>George Adrian - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Here is my portfolio with all my work I have done so far in school." content="My Portfolio">
+  <meta name="George Adrian" content="George Adrian">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="js/tagcanvas.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+
+
+  <section id="home" class="page">
+
+    <header>
+      <nav id="nav1">
+          <div class="hamburgerMenu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navigation navul">
+            <li><a  class="navlink" href="#mywork"> My Work</a></li>
+            <li onclick="showPage('aboutme')"><a class="navlink" href="#aboutme">About Me</a></li>
+
+
+          </ul>
+          <video Autoplay=autoplay muted="muted" playsinline id="logoanimation">
+            <source src="img/logoanimation.mp4" type="video/mp4">
+
+          </video>
+        </nav>
+
+      <div class="some">
+        <a target="_blank" href="https://github.com/AdiGeorge"><img src="img/github.png" alt="GitHub logo"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/george-adrian-aiftincai-40968617b/"><img src="img/linkedin.png" alt="LinkedIn logo"></a>
+
+      </div>
+    </header>
+
+    <main id="mywork">
+
+      <section id="proj1">
+
+        <h1 class="gosee">Go See</h1>
+<img class="circles" src="img/cirlecsframes.png" alt="circles">
+
+          <p class="courier">/* Second Semester Exam Project */</p>
+
+
+
+        <button class="explore1 animated-button1"  onclick="showPage('project1')"><a href="#project1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          Explore
+          </a>
+        </button>
+      </section>
+
+      <section id="proj2">
+
+        <h1 class="webapp">Web App</a></h1>
+        <div class="proj2grid">
+
+          <p class="courier23">/* Third Semester Project */</p>
+          <p class="courier2">/* JavaScript Main Focus */</p>
+
+ <div class="circle3"></div>
+
+          <img class="frame3" src="img/mobil2.svg" alt="mobile frame">
+        </div>
+        <button class="explore2 animated-button1"  onclick="showPage('project2')"><a href="#project2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          Explore
+          </a>
+        </button>
+
+      </section>
+
+
+
+    </main>
+
+
+
+  </section>
+
+  <section id="project1" class="page">
+    <nav id="nav1">
+      <a href="#home" onclick="showPage('home')">
+        <img class="logo" src="img/logo3.png" alt="My logo" class="logo">
+      </a>
+      <ul class="navul">
+        <li onclick="showPage('home')"><a href="#mywork">My Work</a></li>
+        <li onclick="showPage('aboutme')"><a href="#aboutme">About Me</a></li>
+
+      </ul>
+    </nav>
+
+
+    <section class="goseeMain">
+      <video loop autoplay muted="muted" playsinline id="myVideo1">
+        <source src="img/goseevideo.mp4" type="video/mp4">
+
+      </video>
+      <img src="img/goseelogo.svg" alt="Go See logo">
+    </section>
+
+    <div class="contentgosee">
+
+      <h1>About</h1>
+      <p class="about1">GoSee is a
+        start-up company based in Aarhus
+        which is focused on developing a travel
+        application for mobile phones. However,
+        there is more to the concept than just
+        an ordinary booking app.
+        GoSee is run by a core team of 3 top-up
+        international students - Tomáš Sitárik,
+        Adam Rehák, and Cristian Leahu. Their
+        goal is to create and launch an app that
+        facilitates travel planning by matching
+        the itinerary with the best options for
+        transport and accommodation. Moreover, the element of surprise and innovation involves gamifying the whole trip,
+
+        thus putting an element of digital play-
+        fulness and fun into real-life traveling.
+
+        Their idea was born after the founders
+        experienced a series of frustrations
+
+        caused by the current digital alternatives for travel planning. <br><br>
+        We developed a promotional website for the company, showcasing the app's features and concept. Due to a good collaboration and work-flow they decided to use our websolution for promoting the app.</p>
+
+
+      <div class="borderBot"></div>
+      <h1 class="functionalities">Functionalities</h1>
+
+
+      <video class="goseefunctionalities" loop autoplay muted="muted" playsinline>
+        <source src="img/goseefunc.mp4" type="video/mp4">
+      </video>
+
+      <div class="aboutProj1">
+        <div>
+          <h2>Chest opening</h2>
+          <p data-aos="zoom-in">One of the challenges we encountered was making this animation of a chest opening and displaying a modal sign-up form. We achieved this animation by using keyframes and css animations for opening and closing the lid
+            of the chest and jQuey for displaying the modal by adding classes of "opened" and removing them when it's clicked again. We used keyframes and css animations for sliding-up the lid of the chest. Moreover, the chest animation of heartbeat
+            is made with keyframes in order to make it intuitive for clicking.</p>
+        </div>
+        <div>
+          <h2>Animations</h2>
+          <p data-aos="zoom-in">In order to make the web solution more attractive and interactive we used a library called Animate on Scroll, which makes the elements sliding in and out when the user scroll the page, and jQuery animations for some
+            icons, making them bigger when hover, clicking on the questions and displaying the answers with a sliding down animation. We made an easy slidieshow for the mobile mock-ups on the front page in order to showcase better the functionalites
+            of the actual app. </p>
+        </div>
+        <div>
+          <h2>Responsiveness</h2>
+          <p data-aos="zoom-in">A modern design and a modern website requires responsiveness for all types of devices. Because our clients will use our website for promoting the app, we had to make it responsive. In order to achieve this, we used
+            CSS Grid and Flexbox. We had quite a complicated layout so it was a bit challenging for us (because of the line in the middle, different words on the background, the video and other design elements on top of it).</p>
+        </div>
+
+      </div>
+      <button class="button1 animated-button1"><a href="http://www.george-adrian.dk/gosee/" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Visit website
+        </a>
+      </button>
+
+    </div>
+
+
+
+
+  </section>
+
+  <section class="page" id="project2">
+
+    <nav id="nav1">
+      <a href="#home" onclick="showPage('home')">
+        <img class="logo" src="img/logo3.png" alt="My logo" class="logo">
+      </a>
+      <ul class="navul">
+        <li onclick="showPage('home')"><a href="#mywork">My Work</a></li>
+        <li onclick="showPage('aboutme')"><a href="#aboutme">About Me</a></li>
+
+      </ul>
+    </nav>
+
+
+    <section class="movixMain">
+      <img class="cover" src="img/moviescover.png" alt="Movies cover">
+      <img class="movixlogo" src="img/movixlogo.png" alt="Movix logo">
+    </section>
+
+
+    <section class="movixContent">
+
+      <h1>About</h1>
+      <p class="about1">The Web App project was mainly focused on javaScript and fetching the data from a Headless CMS(Flamelink Firebase). We made a movie app where the users can randomly choose a movie if they don't know what to watch. All the
+        data (movie title, description, pictures, reviews) was included in Firebase and then displaying it in the DOM. This project was the most interesting project because we worked a lot with javaScript, we made a lot of functionalities and we
+        developed it as a Single Page Application.I have improved my Frontend Developer skills by diving into some JavaScript concepts in the perspective of multimedia design. We worked with data structures and GitHub.</p>
+
+
+      <div class="borderBot"></div>
+      <h1 class="functionalities">Functionalities</h1>
+      <div class="aboutProj1">
+        <div>
+          <h2>Fetch</h2>
+          <p data-aos="zoom-in">In order to make the web app dynamic we created a database structure with firebase. Here we made a collection named movies where we added movies’ description, images, ratings, basically the whole content and another
+            collection named users where the information the user used for logging in is going to be stored. This way, we can call the content from database using JavaScript and appending it to the DOM. For example, for a specific movie we created a
+            document in firebase and then in that document we created some fields: the answers for the spoilers section, the description of the movie, added the link of the image, rating and the title.
+            In order to run the firebase in our code we had to include some APIs, the links(in the HTML), some variables the configuration for logging in and the function for initializing the script. </p>
+        </div>
+        <div>
+          <h2>Functionalities</h2>
+          <p data-aos="zoom-in"><span class="spans">Search functionality</span><br><br>We created a search functionality where the user can search his desired movie. We created a search function with “value” as a parameter in order to take the input
+            that the user in typing, even if he writes it in lower case. We made a loop that’s going to loop through the movies collection from database, a variable called title so the user can type the title of the movie (the title is taken from
+            database). The if statement checks if the title includes the search query (the user’s input in lower case). If it’s included, then the searched movie is going to be pushed in the filtered movies array and then it’s going to be appended
+            to appendMovies function.<br><br>
+            <span class="spans">Randomizer</span><br><br>Our main feature of the app is the randomizer. In order to achieve this, we made a function where we take the movies from the database, count them and then created a function using
+            Math.random() that chooses a random movie based on its id. After selecting the random number, we’ll send the data from firebase to singleMovie().
+
+            The singleMovie() function is appending the data based on the id and movie in the DOM. (movie title, picture, description). This is the description page. So if the user clicks on the randomizer it’s going to redirect him to the
+            description page of the movie he found.<br><br>
+            <span class="spans">Randomizer</span><br><br>In order for the user to log in with email or google we added this constant with the sign in options. We created a constant called ui that is initializing authentication firebase system. The
+            function shows the user when he successfully signs in. For logging out firebase has a built-in method called signOut() and then we are showing the home page.
+
+
+
+          </p>
+
+        </div>
+        <div>
+          <h2>Single Page Application</h2>
+          <p data-aos="zoom-in">We used Single Page Application concept, which is the way you make more pages having only one HTML file. In order to make the transition between pages we had to hide all the pages and choose which is going to be the
+            default page. Then, by selecting the id of the page that we wanted to show up (the id of the div from HTML) we were displaying it block and adding the class “active”. This is really helpful in improving the loading time because it makes
+            only one HTTP request and making the transition between pages smooth.
+          </p>
+        </div>
+
+      </div>
+      <video class="movixfunctionalities" loop autoplay muted="muted" playsinline>
+        <source src="img/final02.mp4" type="video/mp4">
+
+      </video>
+      <button class="button1 animated-button1"><a href="http://www.george-adrian.dk/movix/" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Visit website
+        </a>
+      </button>
+
+
+
+
+
+
+    </section>
+
+  </section>
+
+
+  <section id="aboutme" class="page">
+
+    <nav id="nav1">
+      <a href="#home" onclick="showPage('home')">
+        <img class="logo" src="img/logo3.png" alt="My logo" class="logo">
+      </a>
+      <ul class="navul">
+        <li onclick="showPage('home')"><a href="#mywork">My Work</a></li>
+        <li onclick="showPage('aboutme')"><a href="#aboutme">About Me</a></li>
+
+      </ul>
+    </nav>
+    <div class="aboutmeContent">
+
+      <img class="me" src="img/me112.png" alt="This is me">
+
+      <div id="sphere">
+        <div id="myCanvasContainer">
+          <canvas width="270" height="270" id="myCanvas">
+
+          </canvas>
+        </div>
+        <div id="tags">
+          <ul>
+
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Wordpress</a></li>
+            <li><a href="#">Firebase</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Three JS</a></li>
+            <li><a href="#">Web GL</a></li>
+            <li><a href="#">Vue.js</a></li>
+            <li><a href="#">SASS</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">APIs</a></li>
+            <li><a href="#">JSON</a></li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">Fetch</a></li>
+            <li><a href="#">Materialize</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="infopart1">
+        <div class="whoami">
+          <div class="bounce">W</div>
+          <div class="bounce">h</div>
+          <div class="bounce">o</div>
+
+          <div class="bounce space">a</div>
+          <div class="bounce">m</div>
+          <div class="bounce space">I</div>
+          <div class="bounce space1">?</div>
+
+        </div>
+        <p>I'm trying to discover and improve myself by doing all kinds of things. I know myself from some points of view: I know that I love coding, challenge myself and I am a curious person, always trying to smile even though, sometimes,
+          the code doesn't work.
+
+          My name is George Adrian Aiftincai, but you can call me Adi. I'm 20 years old and I'm coming from Romania. I discovered my passion about front-end development here in Denmark one year ago. The school helped me understand the
+          fundamentals about programming and, further on, I dived into these concepts and fields by myself.
+
+        </p>
+      </div>
+      <div class="infopart2">
+        <h2>Plans for future</h2>
+        <p>I want to be an intern in a company that can teach me more JavaScript frameworks, such as:</p>
+        <div class="frameicons">
+          <img class="img1" src="img/vue.png" alt="Vue.Js logo">
+          <img class="img1" src="img/react.png" alt="React logo">
+          <img class="img1" src="img/angular.svg" alt="Angular logo">
+          <img class="img1" src="img/three.png" alt="Three JS logo">
+        </div>
+        <p>Further on, I want to apply for Web Development Top-Up in Copenhagen.</p>
+
+      </div>
+
+
+      <h2 class="recomm">Recommendations</h2>
+      <div class="recomText">
+        <p>" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+          to using
+          'Content here, content here', making it look like readable English."</p>
+        <p>" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+          to using
+          'Content here, content here', making it look like readable English."</p>
+        <p>" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+          to using
+          'Content here, content here', making it look like readable English."</p>
+      </div>
+
+      <div class="contactme">
+        <h2>Contact me</h2>
+        <p><span>Email:</span><a href="mailto:adi_george@outlook.com">adi_george@outlook.com</a></p>
+        <p><span>Phone number:</span>+45 91 95 34 01</p>
+        <div class="someabout">
+          <a target="_blank" href="https://github.com/AdiGeorge"><img src="img/github.png" alt="GitHub logo"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/george-adrian-aiftincai-40968617b/"><img src="img/linkedin.png" alt="LinkedIn logo"></a>
+
+        </div>
+      </div>
+    </div>
+
+    <p class="courier3">/* Thank you for checking out my portfolio. :) */</p>
+
+  </section>
+
+  <!-- <div id="loader">
+      <div class="spinner"></div>
+    </div> -->
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init()
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
